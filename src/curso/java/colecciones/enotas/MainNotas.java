@@ -106,14 +106,25 @@ public class MainNotas {
 	private void mostrarMatematicas(Set <Estudiante> estudiantes) {
 		
 		for (Estudiante estudiante : estudiantes) {
-			System.out.println(estudiante.getNombre() + " " + estudiante.getApellidos() + " " + estudiante.getAsignaturas().toString());
+			for (int i = 0; i < estudiante.getAsignaturas().size(); i++) {
+				if (estudiante.getAsignaturas().contains("Matematicas")) {}
+				System.out.println(estudiante.getNombre() + " " + estudiante.getApellidos() + " " + estudiante.getAsignaturas().toString());
+			}
+			
 		}
 	}
 	
 	private void mostrarAprobados(Set <Estudiante> estudiantes) {
 		
+		int media = 0;
 		for (Estudiante estudiante : estudiantes) {
-			System.out.println(estudiante.getNombre() + " " + estudiante.getApellidos() + " " + estudiante.getAsignaturas().toString());
+			for (int i = 0; i < estudiante.getAsignaturas().size(); i++) {
+				media += estudiante.getAsignaturas().get(i).getNota();
+				media = media / estudiante.getAsignaturas().size();
+				if (media > 5) {
+					System.out.println(estudiante.getNombre() + " " + estudiante.getApellidos() + " " + estudiante.getAsignaturas().toString());
+				}
+			}
 		}
 	}
 	
