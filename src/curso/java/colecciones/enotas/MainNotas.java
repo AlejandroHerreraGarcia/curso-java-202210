@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 import curso.java.colecciones.enotas.pojo.Asignatura;
 import curso.java.colecciones.enotas.pojo.Estudiante;
@@ -14,7 +15,7 @@ public class MainNotas {
 	
 	public MainNotas() {
 		super();
-		this.estudiantes = new ArrayList<Estudiante>();
+		this.estudiantes = new CopyOnWriteArrayList<Estudiante>();
 	}
 
 	public static void main(String[] args) {
