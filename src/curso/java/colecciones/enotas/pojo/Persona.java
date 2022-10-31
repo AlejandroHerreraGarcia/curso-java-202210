@@ -43,6 +43,14 @@ public class Persona {
 	public String getDni() {
 		return dni;
 	}
+
+
+
+	@Override
+	public String toString() {
+		return "Persona [nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + "]";
+	}
+	
 	
 
 }

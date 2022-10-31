@@ -3,10 +3,10 @@ package curso.java.colecciones.enotas.pojo;
 public class Asignatura {
 
 	private String nombre;
-	private String nota;
+	private int nota;
 	
 	
-	public Asignatura(String nombre, String nota) {
+	public Asignatura(String nombre, int nota) {
 		super();
 		this.nombre = nombre;
 		this.nota = nota;
@@ -25,17 +25,17 @@ public class Asignatura {
 		this.nombre = nombre;
 	}
 
-	public String getNota() {
+	public int getNota() {
 		return nota;
 	}
 
-	public void setNota(String nota) {
+	public void setNota(int nota) {
 		this.nota = nota;
 	}
 
 	@Override
 	public String toString() {
-		return "Asignatura [nombre=" + nombre + ", nota=" + nota + "]";
+		return "\tAsignatura [nombre=" + nombre + ", nota=" + nota + "]";
 	}
 	
 	
