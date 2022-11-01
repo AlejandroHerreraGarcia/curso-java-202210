@@ -86,7 +86,7 @@ public class Main {
 
 		for (String clave : mapa1.keySet()) {
 			for (Estudiante estudiante: mapa1.get(clave).getEstudiantes()) {
-				if (estudiante.getNombre().equals(alumnoDNI)) {
+				if (estudiante.getDni().equals(alumnoDNI)) {
 					System.out.println(clave);
 				}
 			}
